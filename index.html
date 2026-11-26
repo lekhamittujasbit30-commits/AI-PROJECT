@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fresh, feel-good favourites made with love at Foodie Hub.">
+  <title>Foodie Hub | Fresh food, good mood</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Foodie Hub home">
+        <span class="brand-mark" aria-hidden="true">F</span>
+        <span>foodie<span class="brand-accent">hub</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About us</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a class="cart-link" href="#menu" aria-label="Cart, 0 items">
+        <span aria-hidden="true">🛍️</span>
+        <span class="cart-label">Cart</span>
+        <span class="cart-count" aria-live="polite">0</span>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shape hero-shape-one"></div>
+      <div class="hero-shape hero-shape-two"></div>
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> GOOD FOOD, GOOD MOOD</p>
+          <h1>A little joy<br>on <span>every plate.</span></h1>
+          <p class="hero-description">Fresh ingredients, big flavours, and all your feel-good favourites — made with love and served with a smile.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#menu">Explore our menu <span aria-hidden="true">→</span></a>
+            <a class="text-link" href="#about">Our story <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-note">
+            <div class="avatar-stack" aria-hidden="true">
+              <span>👩🏽</span><span>👨🏻</span><span>👩🏼</span>
+            </div>
+            <p><strong>4.9/5</strong> from happy foodies</p>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-image-frame">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1000&q=85" alt="Colourful fresh salad bowl with avocado and vegetables">
+          </div>
+          <div class="floating-note">
+            <span class="note-icon" aria-hidden="true">🌿</span>
+            <span><strong>Made fresh</strong><small>Every single day</small></span>
+          </div>
+          <span class="hero-doodle" aria-hidden="true">✳</span>
+        </div>
+      </div>
+      <div class="hero-bottom container">
+        <span>FRESHLY PREPARED DAILY</span><span class="bottom-divider"></span><span>MADE FOR YOUR HAPPY PLACE</span>
+      </div>
+    </section>
+
+    <section class="menu-section section-padding" id="menu">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> THE GOOD STUFF</p>
+            <h2>Made to make<br>you <span>smile.</span></h2>
+          </div>
+          <p class="section-intro">The kind of food you think about on the way home. Pick a favourite, or find a new one.</p>
+        </div>
+        <div class="menu-toolbar">
+          <div class="filter-group" role="group" aria-label="Filter menu by category">
+            <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All dishes</button>
+            <button class="filter-button" type="button" data-filter="veg" aria-pressed="false">🌱 Veg</button>
+            <button class="filter-button" type="button" data-filter="non-veg" aria-pressed="false">🍗 Non-veg</button>
+            <button class="filter-button" type="button" data-filter="desserts" aria-pressed="false">🍰 Desserts</button>
+          </div>
+          <span class="menu-note"><span aria-hidden="true">✦</span> A little something for everyone</span>
+        </div>
+        <div class="menu-grid">
+          <article class="food-card" data-category="veg">
+            <div class="food-image">
+              <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=80" alt="Fresh garden salad with colourful vegetables" loading="lazy">
+              <span class="food-tag">🌱 Veg</span>
+            </div>
+            <div class="food-details">
+              <div class="food-title-row"><h3>Garden Glow Bowl</h3><span class="food-price">₹220</span></div>
+              <p>A happy mix of greens, crunchy veggies, seeds and our lemony house dressing.</p>
+              <button class="add-button" type="button" data-item="Garden Glow Bowl">Add to cart <span aria-hidden="true">+</span></button>
+            </div>
+          </article>
+          <article class="food-card" data-category="veg">
+            <div class="food-image">
+              <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=700&q=80" alt="Creamy paneer curry served with fresh herbs" loading="lazy">
+              <span class="food-tag">🌱 Veg</span>
+            </div>
+            <div class="food-details">
+              <div class="food-title-row"><h3>Paneer Tikka</h3><span class="food-price">₹180</span></div>
+              <p>Smoky, marinated paneer grilled until golden and served with mint chutney.</p>
+              <button class="add-button" type="button" data-item="Paneer Tikka">Add to cart <span aria-hidden="true">+</span></button>
+            </div>
+          </article>
+          <article class="food-card" data-category="non-veg">
+            <div class="food-image">
+              <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80" alt="Juicy grilled chicken burger with lettuce and tomato" loading="lazy">
+              <span class="food-tag">🍗 Non-veg</span>
+            </div>
+            <div class="food-details">
+              <div class="food-title-row"><h3>Classic Happy Burger</h3><span class="food-price">₹280</span></div>
+              <p>Juicy grilled chicken, crisp lettuce and our secret feel-good sauce.</p>
+              <button class="add-button" type="button" data-item="Classic Happy Burger">Add to cart <span aria-hidden="true">+</span></button>
+            </div>
+          </article>
+          <article class="food-card" data-category="non-veg">
+            <div class="food-image">
+              <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=700&q=80" alt="Savoury chicken rice bowl with vegetables" loading="lazy">
+              <span class="food-tag">🍗 Non-veg</span>
+            </div>
+            <div class="food-details">
+              <div class="food-title-row"><h3>Cozy Chicken Bowl</h3><span class="food-price">₹320</span></div>
+              <p>Comforting rice, tender chicken and fresh veggies with a little zing.</p>
+              <button class="add-button" type="button" data-item="Cozy Chicken Bowl">Add to cart <span aria-hidden="true">+</span></button>
+            </div>
+          </article>
+          <article class="food-card" data-category="desserts">
+            <div class="food-image">
+              <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=700&q=80" alt="Rich chocolate brownie topped with chocolate pieces" loading="lazy">
+              <span class="food-tag">🍰 Dessert</span>
+            </div>
+            <div class="food-details">
+              <div class="food-title-row"><h3>Chocolate Brownie</h3><span class="food-price">₹100</span></div>
+              <p>Warm, fudgy, deeply chocolatey — basically a hug in brownie form.</p>
+              <button class="add-button" type="button" data-item="Chocolate Brownie">Add to cart <span aria-hidden="true">+</span></button>
+            </div>
+          </article>
+          <article class="food-card" data-category="desserts">
+            <div class="food-image">
+              <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=80" alt="Creamy dessert topped with strawberries and berries" loading="lazy">
+              <span class="food-tag">🍰 Dessert</span>
+            </div>
+            <div class="food-details">
+              <div class="food-title-row"><h3>Berry Blush Parfait</h3><span class="food-price">₹160</span></div>
+              <p>Layers of creamy yoghurt, crunchy granola and juicy seasonal berries.</p>
+              <button class="add-button" type="button" data-item="Berry Blush Parfait">Add to cart <span aria-hidden="true">+</span></button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section section-padding" id="about">
+      <div class="container about-layout">
+        <div class="about-visual">
+          <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=900&q=85" alt="Chef preparing a fresh meal in a bright kitchen" loading="lazy">
+          <div class="about-stamp"><span>GOOD FOOD</span><strong>✳</strong><span>GOOD PEOPLE</span></div>
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> A LITTLE ABOUT US</p>
+          <h2>Food tastes better<br>when it's made<br>with <span>heart.</span></h2>
+          <p>Foodie Hub started with a simple idea: everyday meals should feel a little special. We bring fresh, feel-good ingredients and joyful flavours together, one plate at a time.</p>
+          <p>From our kitchen to your table, everything is made fresh and served with a whole lot of love. That's our recipe for a happier day.</p>
+          <a class="text-link about-link" href="#contact">Come say hello <span aria-hidden="true">→</span></a>
+          <div class="about-stats">
+            <div><strong>100%</strong><span>fresh ingredients</span></div>
+            <div><strong>Made</strong><span>with lots of love</span></div>
+            <div><strong>Every</strong><span>day, a fresh start</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section section-padding" id="contact">
+      <div class="container contact-layout">
+        <div class="contact-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> LET'S TALK FOOD</p>
+          <h2>Got a craving<br>or a <span>question?</span></h2>
+          <p>Place an order, ask us anything, or just say hi. There's always room for one more at our table.</p>
+          <div class="contact-detail"><span class="contact-icon" aria-hidden="true">✉</span><span><small>Drop us a note</small><strong>hello@foodiehub.com</strong></span></div>
+          <div class="contact-detail"><span class="contact-icon" aria-hidden="true">◷</span><span><small>We're here for you</small><strong>Every day, 11 am – 10 pm</strong></span></div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <h3>Send us a little note</h3>
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" placeholder="e.g. Alex" required minlength="2">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          <label for="message">What's on your mind?</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us what you're craving..." required minlength="5"></textarea>
+          <button class="button button-primary form-submit" type="submit">Send message <span aria-hidden="true">→</span></button>
+          <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">F</span><span>foodie<span class="brand-accent">hub</span></span></a>
+      <p>Fresh food, happy hearts. See you at the table! <span aria-hidden="true">💛</span></p>
+      <a href="#home" class="back-to-top">Back to top ↑</a>
+    </div>
+    <div class="container footer-bottom"><span>© 2025 Foodie Hub. Made with love.</span><span>Good food. Good mood. Always.</span></div>
+  </footer>
+</body>
+</html>
